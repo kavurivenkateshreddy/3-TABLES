@@ -1,0 +1,102 @@
+<html>
+<head><h1><center><font color="red"><U>TABLE</U></font><center></h1>
+<title>table's in HTML</title>
+</head>
+<body>
+<p>---> HTML <b>TABLE TAG</b> is used to display data in tabular form (row*column) there can be many rows and columns</p>
+<p>---> we can create a table to display data in tabular form by using <b>(table> (/table></b> Element.
+<P>---> With the help of (tr>,(td>,(th> Eelemrnt.</P>
+<p>---> HTML tables are used to manage the layout of the page e.g header selection navigation bar body content footer section etc<br>---> but it is recommended to use div tag once able to manage the layout of the page</p>
+
+<h3><font color='blue'>TAGS USED IN TABLE</font></h3>
+<p><ol type="1"><li><b>(tr></b>---> it means TABLE ROW Table Row start and end with (tr>   (/tr></li>
+<p><li><b>(td></b>---> it means TABLE DATA nothing but a TABLE COLUMN and start and end with (td> (/td></li>
+<p><li><b>(th></b>---> it means TABLE HEADER it will appear with bold and it is start and end with (th> (/th></li>
+<p><li><b>CAPTION</b>---> The (caption> tag defines a table caption.this tag must be inserted after the (table> tag<br><br>EXANPLE---> (caption> monthly savings (/caption></li>
+<p><li><b>TABLE HEADER</b>---> it is represented by (t head> (/t head> it is used to get the given matter to the top with bold even the code is given below and it is used before (tr> tag and after (/tr> tag<br><br>EXAMPLE---> (t head> (tr> (td> matter (/td> (/tr> (/t head> </li>
+<p><li><b>TABLE FOOTER</b>---> it is represented by (t foot> (/t foot> it is used to get the given matter to the bottom of the table cells even the code is given above and it is used before (tr> tag and after (/tr> tag<br><br>EXAMPLE---> (t foot> (tr> (td> matter (/td> (/tr> (/t foot> </li></ol>
+
+<h3><font color='blue'>ATTRIBUTES</font></h3>
+<p><ol type="1"><li><b>BORDER</b>---> The border is an ATTRIBUTE and it is used in the table tag AND it is use to add the boder to the ROW*COLUMN cells.<br><br> EXANPLE---> (table boder:1px solid black></li>
+<p><li><b>ALIGN</b>---> it is used to set the matter in cell to center 0r left or right.it is used in (td> tag and (th> tag.<br><br>EXAMPLE.1--->(td align="center"> matter (/td><br><br>EXAMPLE.2--->(th align="left"> matter (/th></li>
+<p><li><b>VALIGN</b>---> it is used to set the matter in cell to TOP OR BOTTOM center 0r left or right.it is used in (td> tag and (th> tag.<br><br>EXAMPLE.1--->(td valign="top center"> matter (/td><br><br>EXAMPLE.2--->(th valign="bottom left"> matter (/th></li></ol>
+
+<hr><hr>
+
+<font color="green"><h2>EXAMPLE:</h2></font>Here i am creating a table consist of 2 rows,4columnsand one table header<br><br>
+
+
+<table border="1">
+<tr>       <th>S.NO</th>  <th>NAME</th>       <th>BRANCH</th>     <th>ID</th>            </tr>
+<tr>       <td>1</td>     <td>VENKATESH</td>    <td>MECHANICAL</td> <td>15F01A0306</td>    </tr>
+<tr>       <td>2</td>     <td>SRAVAN</td>  <td>MECHANICAL</td> <td>15F01A0303</td>    </tr>
+</table>
+
+<hr><hr>
+
+<center><font color="red"><h1>TABLE HEIGHT&WIDTH<h1></font></center>
+<h3>
+Here we are changing the height and width of the table by addig the (width/height) attrribute to the table tag 
+</h3>
+<font color="green"><h2>EXAMPLE:</h2></font>
+
+
+<table  border="1" width="300" height="200" >
+<tr>       <th>S.NO</th>  <th>NAME</th>      <th>BRANCH</th>        <th>ID</th>            </tr>
+<tr>       <td>1</td>     <td>VENKATESH</td>   <td>MECHANICAL</td>    <td>15F01A0346</td>    </tr>
+<tr>       <td>2</td>     <td>SRAVAN</td> <td>MECHANICAL</td>    <td>15F01A0303</td>    </tr>
+</table>
+
+<hr><hr>
+
+<center><font color="red"><h1>Cell padding & Cell casing<h1></font></center>
+<h3>
+<li>The cell padding attribute places spacing around data within each cell.</li>
+<li>The cell spacing attribute places space around each cell in the table.</li>
+</h3>
+<font color="green"><h2>EXAMPLE:1</h2></font>
+<caption>cellspadding</caption>
+
+<table " border="1" cellpadding="15" >
+<tr>      <th>S.NO</th>    <th>NAME</th>      <th>BRANCH</th>       <th>ID</th>            </tr>
+<tr>      <td>1</td>       <td>VENKATESH</td>   <td>MECHANICAL</td>   <td>15F01A0346</td>    </tr>
+<tr>      <td>2</td>       <td>SRAVAN</td> <td>MECHANICAL</td>  <td>15F01A0303</td>     </tr>
+</table>
+
+<font color="green"><h2 align="center">EXAMPLE:2</h2></font>
+<center><caption>cellspacing</caption></center>
+
+<center><table border="1" cellspacing="15"></center>
+<tr>      <th>S.NO</th>    <th>NAME</th>       <th>BRANCH</th>      <th>ID</th>            </tr>
+<tr>      <td>1</td>       <td>VENKATESH</td>    <td>MECHANICAL</td>  <td>15F01A0346</td>    </tr>
+<tr>      <td>2</td>       <td>SRAVAN</td>  <td>MECHANICAL</td>  <td>15F01A0303</td>    </tr>
+</table>
+
+<hr><hr>
+
+<font color="red"><h1>ROWSPAN/COLSPAN<h1></font></center>
+<h3>
+The rowspan and colspan are (td) tag attributes. 
+These are used to specify the number of rows or columns a cell should span. 
+The rowspan attribute is for rows as well as the colspan attribute is for columns.
+ These attributes have numeric values,<br> for example, colspan=3 will span three columns.
+</h3>
+
+<font color="green"><h2>EXAMPLE:COLUMN SPAN</h2></font>
+
+<table border="1">
+<tr>       <th colspan="2">NAME</th>     <th>BRANCH</th>     <th>ID</th>          </tr>
+<tr>       <td>1</td> <td>VENKATESH</td>   <td>MECHANICAL</td> <td>15F01A0346</td>  </tr>
+<tr>       <td>2</td> <td>SRAVAN</td> <td>MECHANICAL</td> <td>15F01A0303</td>  </tr>
+</table>
+
+<center><font color="green"><h2>EXAMPLE:ROWSPAN</h2></font></center>
+
+<center><table border="1"></center>
+<tr>       <th ROWspan="2"</th> <th>NAME</th> <th>BRANCH</th> <th>ID</th>          </tr>
+<tr>       <td>VENKATESH</td> <td>MECHANICAL</td> <td>15F01A0346</td>              </tr>
+<tr>       <td>2</td> <td>SRAVAN</td> <td>MECHANICAL</td> <td>15F01A0303</td>      </tr>
+</table>
+
+</body>
+</html>
